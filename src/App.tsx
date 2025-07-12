@@ -2,8 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { APITester } from "./APITester";
 import "@/styles/globals.css";
 
-import logo from "./logo.svg";
-import reactLogo from "./react.svg";
+import logo from "./public/images/logo.svg";
+import reactLogo from "./public/images/react.svg";
 
 export function App() {
   return (
