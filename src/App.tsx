@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { APITester } from "./APITester";
-import "@/styles/globals.css";
+import "../styles/globals.css";
 
 import logo from "@/public/images/logo.svg";
 import reactLogo from "@/public/images/react.svg";
