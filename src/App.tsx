@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import React, { useState } from "react";
 import { APITester } from "./APITester";
 import "@/public/styles/globals.css";
 
@@ -7,6 +8,15 @@ import reactLogo from "@/public/images/react.svg";
 import { CounterComponent } from "./components/shared/CounterComponent";
 
 export function App() {
+  const [count, setCount] = useState<number>(0);
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+
+  const handleDecrement = () => {
+    setCount(count - 1);
+  };
   return (
     <div className="container mx-auto p-8 text-center relative z-10">
       <div className="flex justify-center items-center gap-8 mb-8">
@@ -16,7 +26,7 @@ export function App() {
 
       <Card className="bg-card/50 backdrop-blur-sm border-muted">
         <CardContent className="pt-6">
-          <CounterComponent />
+          <CounterComponent count={count} onIncrement={handleIncrement} onDecrement={handleDecrement} />
         </CardContent>
       </Card>
     </div>
