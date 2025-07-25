@@ -76,11 +76,11 @@ This project was created using `bun init` in bun v1.2.19. [Bun](https://bun.sh) 
 
 ## Feature
 
-✅ Menampilkan nilai counter
-✅ Tombol + untuk menambah nilai
-✅ Tombol - untuk mengurangi nilai
-✅ Tombol Reset untuk mengatur ulang ke 0
-✅ Menggunakan props untuk mengontrol komponen
+- [x] Menampilkan nilai counter
+- [x] Tombol + untuk menambah nilai
+- [x] Tombol - untuk mengurangi nilai
+- [x] Tombol Reset untuk mengatur ulang ke 0
+- [x] Menggunakan props untuk mengontrol komponen
 
 ---
 
