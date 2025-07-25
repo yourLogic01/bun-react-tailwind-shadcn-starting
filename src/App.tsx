@@ -17,6 +17,10 @@ export function App() {
   const handleDecrement = () => {
     setCount(count - 1);
   };
+
+  const handleReset = () => {
+    setCount(0);
+  };
   return (
     <div className="container mx-auto p-8 text-center relative z-10">
       <div className="flex justify-center items-center gap-8 mb-8">
@@ -27,6 +31,10 @@ export function App() {
       <Card className="bg-card/50 backdrop-blur-sm border-muted">
         <CardContent className="pt-6">
           <CounterComponent count={count} onIncrement={handleIncrement} onDecrement={handleDecrement} />
+
+          <button onClick={handleReset} className="px-6 mt-2 py-2 rounded-md bg-yellow-500 text-white font-medium hover:bg-yellow-600 transition">
+            Reset Counter
+          </button>
         </CardContent>
       </Card>
     </div>
