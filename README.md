@@ -34,8 +34,9 @@ This project was created using `bun init` in bun v1.2.19. [Bun](https://bun.sh) 
 └── 📁src   // Main source directory
     └── 📁components    // Reusable UI components
         └── 📁shared    // Shared components
-        └── 📁ui    // Shadcn UI components 
-            ├── button.tsx  
+            ├── CounterComponent.tsx
+        └── 📁ui    // Shadcn UI components
+            ├── button.tsx
             ├── card.tsx
             ├── form.tsx
             ├── input.tsx
@@ -70,3 +71,23 @@ This project was created using `bun init` in bun v1.2.19. [Bun](https://bun.sh) 
 ├── README.md   // Project documentation
 └── tsconfig.json   // TypeScript configuration
 ```
+
+---
+
+## Feature
+
+- [x] Menampilkan nilai counter
+- [x] Tombol + untuk menambah nilai
+- [x] Tombol - untuk mengurangi nilai
+- [x] Tombol Reset untuk mengatur ulang ke 0
+- [x] Menggunakan props untuk mengontrol komponen
+
+---
+
+## Tampilan Aplikasi
+
+Berikut contoh tampilan UI saat aplikasi dijalankan:
+
+![UI Counter](https://github.com/user-attachments/assets/d1fb38ca-ff7d-457b-a5fd-3165df46c96b)
+
+Tombol `+` akan menambah angka, `-` mengurangi, dan `Reset` akan mengatur ulang angka ke 0.
