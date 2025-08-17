@@ -8,6 +8,9 @@ import reactLogo from "@/public/images/react.svg";
 import { CounterComponent } from "./components/shared/CounterComponent";
 import RegistrationForm from "./components/shared/RegistrationForm";
 import { Toaster } from "sonner";
+import ProfileCard from "./components/shared/ProfileCard";
+import { profileData } from "./data";
+
 
 export function App() {
   const [count, setCount] = useState<number>(0);
@@ -30,7 +33,7 @@ export function App() {
         <img src={reactLogo} alt="React Logo" className="h-36 p-6 transition-all duration-300 hover:drop-shadow-[0_0_2em_#61dafbaa] [animation:spin_20s_linear_infinite]" />
       </div>
 
-      <Card className="bg-card/50 backdrop-blur-sm border-muted">
+      <Card className="bg-card/50 backdrop-blur-sm border-muted my-2">
         <CardContent className="pt-6">
           <CounterComponent count={count} onIncrement={handleIncrement} onDecrement={handleDecrement} />
 
@@ -46,6 +49,9 @@ export function App() {
         </CardContent>
       </Card>
       <Toaster position="top-center" className="mt-8" />
+
+      <ProfileCard name={profileData.name} description={profileData.description} image={profileData.image} socialMedia={profileData.socialMedia} />
+
     </div>
   );
 }
