@@ -31,10 +31,20 @@ This project was created using `bun init` in bun v1.2.19. [Bun](https://bun.sh) 
 ## Project Structure
 
 ```ts
+└── 📁docs   // documentation directory
+    └── 📁images // images docccumentation
+        ├── Screenshot 2025-08-03 013453.png
+        ├── Screenshot 2025-08-03 013555.png
+        ├── Screenshot 2025-08-17 214415.png
+        ├── Screenshot 2025-08-17 214442.png
 └── 📁src   // Main source directory
     └── 📁components    // Reusable UI components
         └── 📁shared    // Shared components
+            ├── CharacterCard.tsx
             ├── CounterComponent.tsx
+            ├── DragonBallSection.tsx
+            ├── RegistrationForm.tsx
+            ├── SearchBar.tsx
         └── 📁ui    // Shadcn UI components
             ├── button.tsx
             ├── card.tsx
@@ -42,9 +52,15 @@ This project was created using `bun init` in bun v1.2.19. [Bun](https://bun.sh) 
             ├── input.tsx
             ├── label.tsx
             ├── select.tsx
+            ├── .tsx
+            ├── select.tsx
     └── 📁hooks   // Custom hooks
     └── 📁lib   // Library functions
         ├── utils.ts    // Utility functions
+    └── 📁context   // context components
+        ├── ThemeContext.tsx
+    └── 📁store   // store components
+        ├── counterStore.ts
     └── 📁pages   // Page components
     └── 📁public    // Public assets
         └── 📁images    // Image assets
@@ -81,6 +97,12 @@ This project was created using `bun init` in bun v1.2.19. [Bun](https://bun.sh) 
 - [x] Tombol - untuk mengurangi nilai
 - [x] Tombol Reset untuk mengatur ulang ke 0
 - [x] Menggunakan props untuk mengontrol komponen
+- [x] Menggunakan event handler di setiap event akan muncul di console
+- [x] Menggunakan conditional rendering ketika mau menambahkan notes atau tidakk di form
+- [x] Menggunakan toast notification ketika submit
+- [x] Toggle dark mode
+- [x] Search box karakter dragonball
+- [x] Menamilkan karakter dragonball dari hit API => https://dragonball-api.com/api/
 
 ---
 
@@ -91,3 +113,5 @@ Berikut contoh tampilan UI saat aplikasi dijalankan:
 ![UI Counter](https://github.com/user-attachments/assets/d1fb38ca-ff7d-457b-a5fd-3165df46c96b)
 
 Tombol `+` akan menambah angka, `-` mengurangi, dan `Reset` akan mengatur ulang angka ke 0.
+
+dengan form yang menggunakan tanstack/react-form
