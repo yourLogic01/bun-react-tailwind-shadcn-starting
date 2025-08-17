@@ -6,8 +6,11 @@ import "@/public/styles/globals.css";
 import logo from "@/public/images/logo.svg";
 import reactLogo from "@/public/images/react.svg";
 import { CounterComponent } from "./components/shared/CounterComponent";
+import RegistrationForm from "./components/shared/RegistrationForm";
+import { Toaster } from "sonner";
 import ProfileCard from "./components/shared/ProfileCard";
 import { profileData } from "./data";
+
 
 export function App() {
   const [count, setCount] = useState<number>(0);
@@ -40,7 +43,15 @@ export function App() {
         </CardContent>
       </Card>
 
+      <Card className="bg-card/50 backdrop-blur-sm border-muted mt-8">
+        <CardContent className="pt-6">
+          <RegistrationForm />
+        </CardContent>
+      </Card>
+      <Toaster position="top-center" className="mt-8" />
+
       <ProfileCard name={profileData.name} description={profileData.description} image={profileData.image} socialMedia={profileData.socialMedia} />
+
     </div>
   );
 }
